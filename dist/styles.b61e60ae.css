@@ -1,0 +1,387 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #440a67;
+    
+  
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none; 
+   
+    padding-left: 0;
+    align-items: center;
+    letter-spacing: 2px;
+ 
+    
+}
+
+   
+
+.list-item {
+    padding: 1.5rem;
+    
+    
+}
+.list-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: color 0.20s;
+   
+    
+    
+}
+.list-item a:hover {
+color: #b4aee8;
+}
+.logo {
+    font-size: 3rem;
+    color: #b4aee8;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    /* margin-left: 3rem; */
+    cursor: pointer;
+    transition: color 0.20s;
+    /* margin: 1rem 0 0; */
+    margin-top: 2rem;
+}
+.logo:hover {
+    color:#fff;
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list {
+        flex-direction: row;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        margin-left: 3rem;
+        margin: 0 0 1rem;
+        padding:2rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+.top {
+    text-align: center;
+}
+.top p{
+    margin: 0 2rem;
+}
+.heading {
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 5rem 5rem 1rem 5rem;
+}
+.caption {
+    font-size: 1.7rem;
+    color: #fff;
+
+
+}
+h2 {
+    color:#440a67;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 5rem 5rem 1rem 5rem;
+    text-align: center;
+}
+
+.plan{
+max-width:100%;
+border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+  margin: 2rem;
+}
+.plan-header {
+    background-color:#93329e ;
+height: 120px;
+    max-height: 100% ;
+    padding: 1rem;
+    align-items: center;
+    
+
+
+}
+.plan-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.plan-name {
+    color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.plan-cost {
+    color:#fff;
+    font-weight: 600;
+    font-size: 2.4rem;
+padding: 1rem 0 1rem 1rem;
+}
+.plan-billing {
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+}
+.plan-offer {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #440a67;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+
+.plan-list {
+    list-style: none;
+    padding-left: none;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+.plan-list-item {
+    padding:1rem;
+    font-size: 1.6rem;
+    max-width: 100%;
+    text-align:left;
+    margin-left:3rem ;
+    
+    
+}
+.tick{
+    margin: 0.5rem;
+    vertical-align: middle;
+}
+
+.price-plan {
+    display: grid;
+    max-width: 1200px;
+    
+}
+.plan-container {
+    display: flex;
+    justify-content: center;
+}
+.btn-plan {
+    background-color: #FFF;
+    border-radius: 40px;
+    border: 1px solid #440a67;
+    cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 2rem;
+  outline: 0;
+  padding: 1rem 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.20s;
+}
+
+.btn-plan:hover {
+    background: #440a67;
+    color: #fff;
+}
+@media screen and (min-width: 576px) {
+    .grid--1x2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .grid--1x3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .plan-professional .plan-header{
+background: #440a67;
+  }
+  .plan-professional .plan-offer {
+      background: #93329e;
+  }
+
+  .slide-container {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .hero {
+      display:flex;
+      background: #000;
+      flex-direction: column;
+  }
+  .hero-image {
+      max-width: 100%;
+      padding: 5rem;
+  }
+  @media screen and (min-width:768px) {
+      .hero {
+          flex-direction: row;
+          align-items: center;
+          
+          
+      }
+      .heading {
+        font-size: 6rem;
+          margin-top: 0;
+      }
+  }
+.features {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    
+}
+.feature-heading {
+    font-size: 4rem;
+}
+.feature-caption {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #440a67;
+    padding:1rem 3rem;
+}
+
+.feature1-heading {
+    font-size: 3rem;
+    color: #440a67;
+    text-align: center;
+    margin-top: 3rem;
+   
+}
+.feature1-caption {
+    font-size: 1.5rem;
+    color: #440a67;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding:1rem 3rem;
+
+}
+.feature-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-img {
+    max-width: 100%;
+    padding: 2rem;
+    
+
+    
+}
+.feature2-2 {
+    flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+    .features {
+        flex-direction: row;
+    }
+    .feature1-heading {
+        font-size: 4rem;
+
+    }
+    .feature1-caption {
+        font-size: 2rem;
+        padding:3rem 4rem;
+    }
+    .feature2-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .feature-container {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+.footer {
+    background: #440a67;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-list {
+    display: flex;
+    padding-left: 0;
+    max-width: 900px;
+    
+
+}
+.icons-footer {
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    
+}
+.footer-copy {
+    font-size: 1.6rem;
+    color: #fff;
+    opacity: 0.4;
+}
+.footer-nav .logo {
+    margin: 0;
+}
+.footer-nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.social-icons {
+    margin-top: 1rem;
+}
+.price-plan {
+    margin-bottom: 2rem;
+}
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
